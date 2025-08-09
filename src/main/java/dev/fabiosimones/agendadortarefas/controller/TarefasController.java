@@ -2,7 +2,10 @@ package dev.fabiosimones.agendadortarefas.controller;
 
 import dev.fabiosimones.agendadortarefas.business.TarefaService;
 import dev.fabiosimones.agendadortarefas.business.dto.TarefasDTO;
+import dev.fabiosimones.agendadortarefas.infrastructure.entity.enums.StatusNotificacaoEnum;
+import dev.fabiosimones.agendadortarefas.infrastructure.exceptions.ResourceNotFoundException;
 import lombok.RequiredArgsConstructor;
+import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
@@ -35,5 +38,24 @@ public class TarefasController {
     @GetMapping
     public ResponseEntity<List<TarefasDTO>> buscaTarefasPorEmail(@RequestHeader("Authorization") String token){
         return ResponseEntity.ok(tarefaService.buscaTarefasPorEmail(token));
+    }
+
+    @DeleteMapping
+    public ResponseEntity<Void> deletaTarefaPorId(@RequestParam String id){
+        tarefaService.deletaTarefaPorId(id);
+        return ResponseEntity.ok().build();
+    }
+
+    @PatchMapping
+    public ResponseEntity<TarefasDTO> alteraStatusNotificacao(
+            @RequestParam("status")StatusNotificacaoEnum statusNotificacaoEnum,
+            @RequestParam("id")String id){
+        return ResponseEntity.ok(tarefaService.alteraStatus(statusNotificacaoEnum, id));
+    }
+
+    @PutMapping
+    public ResponseEntity<TarefasDTO> updateTarefas(@RequestBody TarefasDTO dto,
+                                                    @RequestParam String id){
+        return ResponseEntity.ok(tarefaService.updateTarefas(dto, id));
     }
 }
