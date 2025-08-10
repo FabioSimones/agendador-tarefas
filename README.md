@@ -1,9 +1,3 @@
-📬 Contato </br>
-📧 Email: simones.fabio1994@gmail.com </br>
-💼 LinkedIn: Fábio Simones </br>
-🐙 GitHub: https://github.com/FabioSimones </br>
-🐙 GitHub do projeto usuário: https://github.com/FabioSimones/usuario </br>
-
 # 🗓️ Microsserviço de Agendamento de Tarefas
 
 Este projeto faz parte de uma **série de microsserviços** voltados para o desenvolvimento de um **agendador de tarefas**.  
@@ -92,4 +86,9 @@ O projeto foi criado utilizando o [Spring Initializr](https://start.spring.io/),
 
 ---
 
+📬 Contato </br>
+📧 Email: simones.fabio1994@gmail.com </br>
+💼 LinkedIn: Fábio Simones </br>
+🐙 GitHub: https://github.com/FabioSimones </br>
+🐙 GitHub do projeto usuário: https://github.com/FabioSimones/usuario </br>
 
