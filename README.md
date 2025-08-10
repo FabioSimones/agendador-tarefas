@@ -1,7 +1,7 @@
 📬 Contato </br>
 📧 Email: simones.fabio1994@gmail.com </br>
 💼 LinkedIn: Fábio Simones </br>
-🐙 GitHub: [Seu Usuário](https://github.com/FabioSimones) </br>
+🐙 GitHub: https://github.com/FabioSimones </br>
 🐙 GitHub do projeto usuário: https://github.com/FabioSimones/usuario </br>
 
 # 🗓️ Microsserviço de Agendamento de Tarefas
