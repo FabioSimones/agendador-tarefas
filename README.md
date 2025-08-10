@@ -1,3 +1,9 @@
+📬 Contato
+📧 Email: simones.fabio1994@gmail.com
+💼 LinkedIn: Fábio Simones
+🐙 GitHub: [Seu Usuário](https://github.com/FabioSimones)
+🐙 GitHub do projeto usuário: https://github.com/FabioSimones/usuario
+
 # 🗓️ Microsserviço de Agendamento de Tarefas
 
 Este projeto faz parte de uma **série de microsserviços** voltados para o desenvolvimento de um **agendador de tarefas**.  
